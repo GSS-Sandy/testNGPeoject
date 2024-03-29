@@ -31,18 +31,18 @@ public class browserDemoTestNG {
     @Test
     public void quickStartiOSNativeDemo() {
         driver.rotate(ScreenOrientation.PORTRAIT);
-        driver.findElement(By.xpath("//*[@id='usernameTextField']")).sendKeys("company");
+        driver.findElement(By.xpath("//*[@label='usernameTextField']")).sendKeys("company");
         driver.hideKeyboard();
-        driver.findElement(By.xpath("//*[@id='passwordTextField']")).sendKeys("company");
-        driver.findElement(By.xpath("//*[@id='loginButton']")).click();
-        driver.findElement(By.xpath("//*[@id='makePaymentButton']")).click();
-        driver.findElement(By.xpath("//*[@id='phoneTextField']")).sendKeys("0541234567");
-        driver.findElement(By.xpath("//*[@id='nameTextField']")).sendKeys("Jon Snow");
-        driver.findElement(By.xpath("//*[@id='amountTextField']")).sendKeys("50");
-        driver.findElement(By.xpath("//*[@id='countryButton']")).click();
-        driver.findElement(By.xpath("//*[@id='Switzerland']")).click();
-        driver.findElement(By.xpath("//*[@id='sendPaymentButton']")).click();
-        driver.findElement(By.xpath("//*[@id='Yes']")).click();
+        driver.findElement(By.xpath("//*[@label='passwordTextField']")).sendKeys("company");
+        driver.findElement(By.xpath("//*[@label='Login']")).click();
+        driver.findElement(By.xpath("//*[@label='Make Payment']")).click();
+        driver.findElement(By.xpath("//*[@label='phoneTextField']")).sendKeys("0912345678");
+        driver.findElement(By.xpath("//*[@label='nameTextField']")).sendKeys("Test Acc");
+        driver.findElement(By.xpath("//*[@label='amountTextField']")).sendKeys("10");
+        driver.findElement(By.xpath("//*[@label='countryButton']")).click();
+        driver.findElement(By.xpath("//*[@label='USA']")).click();
+        driver.findElement(By.xpath("//*[@label='Send Payment']")).click();
+        driver.findElement(By.xpath("//*[@label='Yes']")).click();
     }
 
     @AfterTest
