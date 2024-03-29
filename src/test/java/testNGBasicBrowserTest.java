@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class testNGBasicBrowserTest {
 
-    private static final String ACCESS_KEY = "eyJ4cC51Ijo0NTExMTYsInhwLnAiOjIsInhwLm0iOiJNVFU0T0RVeE5UVXhOREk1TlEiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE5MDM4NzU1MTQsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.WtGN8_mBE_GgVw1SYjTbG7OSePmTsFVUiPRzOgt_J2g";
+    private static final String ACCESS_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo0Nzg0NSwieHAucCI6MTM0NTQzLCJ4cC5tIjoxNjg2MjczNDY2MTY3LCJleHAiOjIwMjcwMzQwNjQsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.MMhQsAZkREfdzZZKosGkJjl_OsmDb-AQpClchGEcXM0";
     private WebDriver driver;
     private URL url;
     private DesiredCapabilities dc = new DesiredCapabilities();
@@ -37,7 +37,7 @@ public class testNGBasicBrowserTest {
         dc.setCapability("accessKey", ACCESS_KEY);
         dc.setCapability("testName", "Demo Browsers Test");
         dc.setCapability("CustomerDemoName", "ATB");
-        dc.setCapability("reporterURL", "https://qacloud.experitest.com/reporter/#/test-view-view/852");
+        dc.setCapability("reporterURL", "https://partners.experitest.com/reporter/#/test-view-view/852");
         driver = new RemoteWebDriver(url, dc);
     }
 
