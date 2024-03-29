@@ -13,7 +13,7 @@ import java.util.Date;
 
 public class iOSdemo {
 
-    private String accessKey = "eyJ4cC51Ijo0NTExMTYsInhwLnAiOjIsInhwLm0iOiJNVFU0T0RVeE5UVXhOREk1TlEiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE5MDM4NzU1MTQsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.WtGN8_mBE_GgVw1SYjTbG7OSePmTsFVUiPRzOgt_J2g";
+    private String accessKey = "eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo0Nzg0NSwieHAucCI6MTM0NTQzLCJ4cC5tIjoxNjg2MjczNDY2MTY3LCJleHAiOjIwMjcwMzQwNjQsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.MMhQsAZkREfdzZZKosGkJjl_OsmDb-AQpClchGEcXM0";
     protected IOSDriver<IOSElement> driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
     private final String DEFAULT_NAME = "demoTest1";
@@ -29,7 +29,7 @@ public class iOSdemo {
         dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
         dc.setCapability("CustomerDemoName","ATB");
-        driver = new IOSDriver<>(new URL("https://demo.experitest.com/wd/hub"), dc);
+        driver = new IOSDriver<>(new URL("https://partners.experitest.com/wd/hub"), dc);
 
     }
 
