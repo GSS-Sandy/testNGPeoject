@@ -23,7 +23,7 @@ public class testNGBasicBrowserTest {
     @BeforeTest
     public void setUp(@Optional (BROWSER) String browser) throws Exception {
         System.out.println(new Date() + "\t" + "Starting test for - " + browser);
-        url = new URL("https://demo.experitest.com/wd/hub");
+        url = new URL("https://partners.experitest.com/wd/hub");
         if (browser.equalsIgnoreCase("firefox")) {
             dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);
             dc.setCapability(CapabilityType.PLATFORM, Platform.ANY);
